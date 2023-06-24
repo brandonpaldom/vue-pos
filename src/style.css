@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neutral-100;
+  }
+  h1 {
+    @apply text-[2rem] font-bold;
+  }
+  h2 {
+    @apply text-[1.5rem] font-bold;
+  }
+  h3 {
+    @apply text-[1.25rem] font-bold;
+  }
+  h4 {
+    @apply text-[1rem] font-bold text-green-600;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-full font-semibold transition-colors duration-300 cursor-pointer text-sm;
+  }
+  .btn-small {
+    @apply px-4 py-1 rounded-full font-semibold transition-colors duration-300 cursor-pointer text-sm;
+  }
+  .btn-primary {
+    @apply bg-green-500 text-black hover:bg-green-600;
+  }
+  .btn-secondary {
+    @apply bg-green-500/10 text-green-600 hover:bg-green-500/20;
+  }
+  .btn-error {
+    @apply text-red-600 hover:bg-red-500/10;
+  }
+  .link {
+    @apply font-medium text-green-600 hover:text-green-700 transition-colors duration-300;
+  }
+  .card {
+    @apply bg-white rounded-lg p-4;
+  }
+}
