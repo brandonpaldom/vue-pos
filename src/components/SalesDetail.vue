@@ -1,5 +1,5 @@
 <script setup>
-import Amount from '@/components/amount.vue'
+import Amount from '@/components/Amount.vue'
 import { formatCurrency } from '@/helpers'
 
 defineProps({
